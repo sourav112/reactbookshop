@@ -14,6 +14,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faList, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
+import { Button } from 'keep-react'
+import { Gear, SignIn } from 'phosphor-react'
 
 function Navbar_Header() {
   const activeLink="bg-black-100 text-white";
@@ -32,8 +34,14 @@ function Navbar_Header() {
          <Link to={Routes.Faq}> <NavbarItem className='text-lg text-blue-700'><FontAwesomeIcon icon={faCircleQuestion} />FAQ</NavbarItem></Link>
         </NavbarList>
         <NavbarList>
-          <NavbarItem active={true}>Buy Book</NavbarItem>
-          <NavbarItem active={true}>Sign IN</NavbarItem>
+          <NavbarItem><Button>
+        <Gear size={20} className="mr-1.5" />
+        Buy Book
+      </Button></NavbarItem>
+          <NavbarItem><Button>
+        <SignIn size={20} className="mr-1.5" />
+        Sign In
+      </Button></NavbarItem>
         </NavbarList>
         <NavbarCollapseBtn />
         <NavbarCollapse>
@@ -41,8 +49,14 @@ function Navbar_Header() {
           <NavbarItem>About</NavbarItem>
           <NavbarItem>Blog</NavbarItem>
           <Link to={Routes.Faq}> <NavbarItem>FAQ</NavbarItem></Link>
-          <NavbarItem active={true}>Buy Book</NavbarItem>
-          <NavbarItem active={true}>Sign IN</NavbarItem>
+          <NavbarItem><Button>
+        <Gear size={20} className="mr-1.5" />
+        Buy Book
+      </Button></NavbarItem>
+          <NavbarItem><Button>
+        <SignIn size={20} className="mr-1.5" />
+        Sign In
+      </Button></NavbarItem>
         </NavbarCollapse>
       </NavbarContainer>
       </div>
