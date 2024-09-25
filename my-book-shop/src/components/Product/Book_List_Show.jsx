@@ -17,7 +17,7 @@ export default function Book_List_Show() {
         .catch((error)=>console.error("Error: ",error));
     },[])
   return (
-    <div className='grid grid-cols-3 gap-4'>
+    <div className='grid lg:grid-cols-3 gap-4 sm:grid-cols-1'>
             {books?.map((book)=>{
                 return <Book_Single_List key={book.bookId} book={book} />;
             })}
