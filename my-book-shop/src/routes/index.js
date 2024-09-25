@@ -6,4 +6,5 @@ export const Routes = {
         DYNAMIC:(bookId)=>`/book/${bookId}`,
 
     },
+    Faq:"/faq",
 }

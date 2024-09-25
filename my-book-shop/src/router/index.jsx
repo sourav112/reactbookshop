@@ -6,6 +6,7 @@ import { Routes } from "../routes";
 import Book_List_Show from "../components/Product/Book_List_Show";
 import Book_Details_Page from "../pages/Book_Details_Page";
 import ErrorPage from "../Extra/ErrorPage";
+import Faq_Page from "../pages/Faq_Page";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: `${Routes.Single_Book.STATIC}`,
         element: <Book_Details_Page/>,
+      },
+      {
+        path: `${Routes.Faq}`,
+        element: <Faq_Page/>,
       },
   ]);
 
