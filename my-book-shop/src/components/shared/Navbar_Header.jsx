@@ -11,6 +11,9 @@ import {
   NavbarItem,
   NavbarList,
 } from 'keep-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faList, faPaperclip } from '@fortawesome/free-solid-svg-icons';
+import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
 
 function Navbar_Header() {
   const activeLink="bg-black-100 text-white";
@@ -23,10 +26,10 @@ function Navbar_Header() {
          <Link to={Routes.Home}><img src={logo} alt="keep" width="40" height="20" /></Link>
         </NavbarBrand>
         <NavbarList>
-        <Link to={Routes.Home}><NavbarItem className='text-lg text-blue-700'>Home</NavbarItem></Link>
-          <NavbarItem  className='text-lg text-blue-700'>About</NavbarItem>
-          <NavbarItem className='text-lg text-blue-700'>Blog</NavbarItem>
-         <Link to={Routes.Faq}> <NavbarItem className='text-lg text-blue-700'>FAQ</NavbarItem></Link>
+        <Link to={Routes.Home}><NavbarItem className='text-lg text-blue-700'><FontAwesomeIcon icon={faHouse} /> Home</NavbarItem></Link>
+          <NavbarItem  className='text-lg text-blue-700'><FontAwesomeIcon icon={faPaperclip} />About</NavbarItem>
+          <NavbarItem className='text-lg text-blue-700'><FontAwesomeIcon icon={faList} />Blog</NavbarItem>
+         <Link to={Routes.Faq}> <NavbarItem className='text-lg text-blue-700'><FontAwesomeIcon icon={faCircleQuestion} />FAQ</NavbarItem></Link>
         </NavbarList>
         <NavbarList>
           <NavbarItem active={true}>Buy Book</NavbarItem>

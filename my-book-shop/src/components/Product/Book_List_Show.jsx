@@ -25,7 +25,8 @@ export default function Book_List_Show() {
         .catch((error)=>console.error("Error: ",error));
     },[])
   return (
-    <div className='container mx-auto items-center justify-center'>
+    <div className='container mx-auto items-center justify-center'> 
+    
          <Alert>
             <AlertContainer>
                 <AlertIcon />

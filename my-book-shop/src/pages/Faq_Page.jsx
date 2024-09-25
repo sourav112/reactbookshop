@@ -14,7 +14,7 @@ export default function Faq_Page() {
   return (
     <div>
     <Navbar_Header/>
-        <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center mt-20'>
+            <div className='container mx-auto flex px-5 py-20 md:flex-row flex-col items-center mt-20'>
         <Accordion flush={true}>
             <AccordionPanel>
                 <AccordionContainer>
